@@ -2,13 +2,13 @@ package com.driver.test;
 
 import static org.junit.Assert.*;
 
-import com.driver.Product;
+import com.driver.Main;
 import org.junit.jupiter.api.Test;
 
 public class TestCases {
     @Test
     public void testProductWithIntegers() {
-        Product p = new Product();
+        Main.Product p = new Main.Product();
 
         int result1 = p.product(2, 3);
         assertEquals(6, result1);
@@ -19,7 +19,7 @@ public class TestCases {
 
     @Test
     public void testProductWithDoubles() {
-        Product p = new Product();
+        Main.Product p = new Main.Product();
 
         double result = p.product(2.0, 3.0);
         assertEquals(6.0, result, 0.0001); // Using delta for double comparison
